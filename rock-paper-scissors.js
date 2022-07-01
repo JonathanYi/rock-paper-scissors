@@ -18,3 +18,11 @@ function gameRound(playerSelection, computerSelection) {
         return `You Lose! ${computerSelection} beats ${playerSelection}`;
     }
 }
+
+function game() {
+    for(let i = 0; i < 5; i++) {
+        let playerMove = prompt('Type in your Choice: Rock, Paper, or Scissors');
+        //console.log(playerMove)
+        console.log(gameRound(playerMove, computerPlay()));
+    }
+}
